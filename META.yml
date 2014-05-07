@@ -19,6 +19,7 @@ requires:
   Class::Date: 0
   Test::Exception: 0
   open: 0
+  perl: v5.8.0
   strict: 0
   utf8: 0
   warnings: 0
@@ -26,4 +27,4 @@ resources:
   bugtracker: https://github.com/bessarabov/YAPC-Russia/issues
   homepage: https://github.com/bessarabov/YAPC-Russia
   repository: https://github.com/bessarabov/YAPC-Russia.git
-version: 1.0.0
+version: 1.1.0
