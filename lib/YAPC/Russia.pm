@@ -1,6 +1,6 @@
 package YAPC::Russia;
 {
-  $YAPC::Russia::VERSION = '1.1.0';
+  $YAPC::Russia::VERSION = '1.1.1';
 }
 
 # ABSTRACT: Perl conference YAPC::Russia
@@ -14,6 +14,7 @@ use open qw(:std :utf8);
 use Carp;
 
 use Class::Date qw(date);
+
 
 
 sub new {
@@ -89,11 +90,13 @@ YAPC::Russia - Perl conference YAPC::Russia
 
 =head1 VERSION
 
-version 1.1.0
+version 1.1.1
 
 =head1 DESCRIPTION
 
 Here is a simple object that gives data about Perl conference YAPC::Russia.
+
+Several links about YAPC::Russia 2014:
 
 L<http://event.yapcrussia.org/yr2014/>
 
@@ -101,16 +104,18 @@ L<https://www.facebook.com/events/317682595047028/>
 
 L<https://vk.com/yapcrussia2014>
 
-YAPC::Russia version numbers uses Semantic Versioning standart.
+Module YAPC::Russia uses Semantic Versioning standart for version numbers.
 Please visit L<http://semver.org/> to find out all about this great thing.
 
-=head1 new
+=head1 METHODS
+
+=head2 new
 
     my $yr = YAPC::Russia->new(
         year => 2014,
     );
 
-=head1 get_dates
+=head2 get_dates
 
 Returns list of Class::Date objects with dates of the YAPC::Russia event.
 
@@ -121,7 +126,7 @@ For the year 2014 it will return objects with dates:
     2014-06-13
     2014-06-14
 
-=head1 get_place
+=head2 get_place
 
 Returns hashref with data about place where YAPC::Russia is held.
 
